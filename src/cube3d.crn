@@ -1,0 +1,19 @@
+nx + inrp -> nx + cxp
+ny + inrp -> ny + cyp
+nz + inrp -> nz + czp
+cxp -> cxtp + axp
+cxtp + cxtm -> axm + axm
+cyp -> cytp + ayp
+cytp + cytm -> aym + aym
+czp -> cztp + azp
+cztp + cztm -> azm + azm
+axm + aym -> mxym
+axp -> aym + mxyp
+ayp -> axm + mxyp
+mxym + azm -> mxyzm
+mxyp -> azm + mxyzp
+azp -> mxym + mxyzp
+mxyzp + mxyzm -> 0
+Q + mxyzp -> t1 + t2
+t1 -> Q + mxyzp
+t2 -> inrp + R
