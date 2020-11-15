@@ -10,10 +10,10 @@
   <img alt="environment: in vitro" src="https://img.shields.io/badge/environment-in%20vitro-red"/>
   <img alt="platform: DNA | TMSD" src="https://img.shields.io/badge/platform-DNA%20%7C%20TMSD-white"/>
   <img alt="bundle size: 17K nucleotides" src="https://img.shields.io/badge/bundle%20size-17K%20nucleotides-blue"/>
-  <img alt="total lines: 19" src="https://img.shields.io/badge/total%20lines-19-black.svg"/>
   <br>
+  <img alt="total lines: 19" src="https://img.shields.io/badge/total%20lines-19%20reactions-black.svg"/>
   <img alt="license: GPL-v.3.0+" src="https://img.shields.io/badge/license-GPL--v.3.0%2B-green.svg"/>
-  <img alt="build: passing" src="https://img.shields.io/badge/build-passing-green"/>
+  <!-- <img alt="build: passing" src="https://img.shields.io/badge/build-passing-green"/> -->
   <img alt="active installs: 0" src="https://img.shields.io/badge/active%20installs-0-yellow"/>
 </p>
 <br />
