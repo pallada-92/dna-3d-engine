@@ -63,3 +63,32 @@ nz = 0.737 + -0.270 X + 0.302 Y
 * [Excel version](https://observablehq.com/@pallada-92/excel-3d-engine-emulator)
 * [JavaScript version](https://observablehq.com/d/940d2895b3e9e611)
 * [Russian (Русский)](https://habr.com/ru/post/437168/)
+
+
+## Gallery
+
+<table>
+  <tr>
+    <td align="center" valign="center" width="50%">
+      <img src="https://habrastorage.org/getpro/habr/post_images/9e2/fc9/d46/9e2fc9d4605a01c82ae317775fad1e10.gif" width="100%" /><br>
+      Ray marching ordinary implementation<br>
+      <img src="https://habrastorage.org/webt/gl/b_/e8/glb_e8-jvkdoyhuri8gctsnysy4.png" width="200" />
+    </td>
+    <td align="center" valign="center" width="50%">
+      <img src="https://habrastorage.org/webt/8n/r_/6o/8nr_6oqof2xrvhf8mbt0r4lmtmu.gif" width="100%" /><br>
+      Ray marching differential form<br>
+      <img src="https://habrastorage.org/webt/ao/ze/qh/aozeqh4htzkzvbh_po67dmh_zho.png" width="200" />
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td align="center" valign="center">
+      <img src="https://habrastorage.org/webt/gw/zb/v1/gwzbv1w5humyabeelkyx_c3gq7k.gif" width="100%" /><br>
+      Simplified animation of toehold mediated strand displacement technique
+    </td>
+    <td align="center" valign="center">
+      <img src="https://habrastorage.org/webt/ph/iv/ax/phivaxoqftqzm2h7qvbbj41dwiq.png" width="100%" /><br><br>
+      Types of oligonucleotides required for single reaction
+    </td>
+  </tr>
+</table>
