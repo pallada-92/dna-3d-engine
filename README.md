@@ -27,6 +27,8 @@
 
 1. Synthesise oligonucleotides from [cube3d.dna](./cube3d.dna) file.
 2. Arrange test tubes as shown on the diagram below.
+3. Don't forget to provide initial concentrations according to the table below.
+4. Use pipette to encode position (row and column) of each tube to start computation.
 
 <details>
 <summary>Environment variables</summary>
@@ -40,9 +42,9 @@ ayp = 0.898
 cztm = 1.243
 azp = 1.243
 mxyzm = 0.3
-nx = 0.036 + 0.555 X + 0.147 Y
-ny = 0.853 + -0.517 Y
-nz = 0.737 + -0.270 X + 0.302 Y
+nx = 0.036 + 0.555 Col + 0.147 Row
+ny = 0.853 + -0.517 Row
+nz = 0.737 + -0.270 Col + 0.302 Row
 ```
 </details>
 
@@ -53,11 +55,14 @@ nz = 0.737 + -0.270 X + 0.302 Y
 
 ## Testing
 
+1. Pick the fluorophore of your favourite color and attach it to the `Strand R0`, so that it activates when `R` species are being produced.
+2. Use the light source of specific wavelength (depending of the fluorophore you've chosen) to render the result.
+
 <p align="center">
 <img src="https://hsto.org/webt/hv/q_/zy/hvq_zyw6uuwwfpg6umqthctq6tm.png" width="600"/>
 </p>
 
-## In other languages
+## Ports to other languages
 
 * [SQLite version](https://observablehq.com/@pallada-92/sql-3d-engine)
 * [Excel version](https://observablehq.com/@pallada-92/excel-3d-engine-emulator)
