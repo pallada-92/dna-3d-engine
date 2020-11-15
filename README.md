@@ -14,6 +14,7 @@ Most advanced and compact 3d engine ever implemented in DNA code
   <img alt="platform: DNA | TMSD" src="https://img.shields.io/badge/platform-DNA%20%7C%20TMSD-white"/>
   <img alt="bundle size: 17K nucleotides" src="https://img.shields.io/badge/bundle%20size-17K%20nucleotides-blue"/>
   <img alt="total lines: 19" src="https://img.shields.io/badge/total%20lines-19-black.svg"/>
+  <img alt="build: passing" src="https://img.shields.io/badge/build-passing-green"/>
   <img alt="license: GPL-v.3.0+" src="https://img.shields.io/badge/license-GPL--v.3.0%2B-green.svg"/>
   <img alt="active installs: 0" src="https://img.shields.io/badge/active%20installs-0-yellow"/>
 </p>
