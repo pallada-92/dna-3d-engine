@@ -71,12 +71,12 @@ nz = 0.737 + -0.270 X + 0.302 Y
   <tr>
     <td align="center" valign="center" width="50%">
       <img src="https://habrastorage.org/getpro/habr/post_images/9e2/fc9/d46/9e2fc9d4605a01c82ae317775fad1e10.gif" width="100%" /><br>
-      Ray marching ordinary implementation<br>
+      Ray marching common implementation<br>
       <img src="https://habrastorage.org/webt/gl/b_/e8/glb_e8-jvkdoyhuri8gctsnysy4.png" width="200" />
     </td>
     <td align="center" valign="center" width="50%">
       <img src="https://habrastorage.org/webt/8n/r_/6o/8nr_6oqof2xrvhf8mbt0r4lmtmu.gif" width="100%" /><br>
-      Ray marching differential form<br>
+      Ray marching differential form used here<br>
       <img src="https://habrastorage.org/webt/ao/ze/qh/aozeqh4htzkzvbh_po67dmh_zho.png" width="200" />
     </td>
   </tr>
@@ -89,6 +89,43 @@ nz = 0.737 + -0.270 X + 0.302 Y
     <td align="center" valign="center">
       <img src="https://habrastorage.org/webt/ph/iv/ax/phivaxoqftqzm2h7qvbbj41dwiq.png" width="100%" /><br><br>
       Types of oligonucleotides required for single reaction
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td align="center" valign="center">
+      <img src="https://habrastorage.org/webt/ww/9k/xd/ww9kxd64xtigxtbpc5mm3tvsswg.png" width="100%" /><br>
+      Data flow graph of JS implementation
+    </td>
+    <td align="center" valign="center">
+      <img src="https://habrastorage.org/webt/uj/_l/2_/uj_l2_q26onfetzrpq_0wfetxic.png" width="100%" /><br>
+      Species interaction graph of this implementation
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td align="center" valign="center">
+      <img src="https://habrastorage.org/webt/-j/ak/5i/-jak5iv5d7pkkosrhl_g4r3oo34.png" width="100%" /><br><br>
+      Unminified source code of this implementation. It is just plain reactions with a few macros.
+      Minifier was written in Wolfram Language specially for this project. 
+    </td>
+    <td align="center" valign="center">
+      <br>
+      <img src="https://habrastorage.org/webt/qn/-j/bu/qn-jbugqz0opyuxhvm6j09wv5te.png" width="100%" /><br><br>
+      CRN++ source code for comparison (CRN++ is not used in this implementation)
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td align="center" valign="center">
+      <img src="https://habrastorage.org/webt/lv/ah/vs/lvahvszdgpw5vbvottwja7gwtjw.png" width="100%" /><br><br>
+      10 reactions after minification used in this project.
+      Since piperine compiler doesn't support more than 2 products in the right hand side, reactions were splitted.
+    </td>
+    <td align="center" valign="center">
+      <br>
+      <img src="https://habrastorage.org/webt/lh/hx/j8/lhhxj842nxuxdocbz1zsyazvfok.png" width="100%" /><br><br>
+      CRN++ 70 reactions output for comparison (CRN++ is not used in this implementation)
     </td>
   </tr>
 </table>
