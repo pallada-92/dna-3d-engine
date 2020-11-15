@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://hsto.org/webt/r6/dp/ks/r6dpksrxkvmgumetfjvfjcwn4wy.png" alt="CubeCRN logo" width="700" />
+  <img src="https://hsto.org/webt/r6/dp/ks/r6dpksrxkvmgumetfjvfjcwn4wy.png" alt="CubeCRN logo" width="400" />
 </p>
 
 <h1 align="center">Cube3d.dna</h1>
@@ -166,4 +166,8 @@ piperine-design cube3d.crn --maxspurious 0.765
 
 1. Marko Vasic, David Soloveichik and Sarfraz Khurshid<br>
    <a href="https://arxiv.org/abs/1809.07430">CRN++: Molecular Programming Language</a><br>
-   Natural Computing (2020) 19:391–407 DOI: 10.1007/s11047-019-09775-1
+   Natural Computing (2020) 19:391–407 DOI: 10.1007/s11047-019-09775-1<br><br>
+
+1. Inigo Quilez<br>
+   https://www.iquilezles.org/www/index.htm<br>
+   Introduction to Raymarching Signed Distance Functions
