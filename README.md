@@ -69,6 +69,16 @@ nz = 0.737 + -0.270 Col + 0.302 Row
 * [JavaScript version](https://observablehq.com/d/940d2895b3e9e611)
 * [Russian (Русский)](https://habr.com/ru/post/437168/)
 
+## Building from source
+
+1. Install the <a href="https://github.com/DNA-and-Natural-Algorithms-Group/piperine">piperine compiler by the DNA and Natural Algorithms Group</a>.
+2. Run the following command
+
+```
+piperine-design cube3d.crn --maxspurious 0.765
+```
+
+3. Wait 2-3 hours for compilation results
 
 ## Gallery
 
@@ -134,3 +144,27 @@ nz = 0.737 + -0.270 Col + 0.302 Row
     </td>
   </tr>
 </table>
+
+
+## References
+
+1. David Soloveichik, Georg Seelig and Erik Winfree<br>
+   <a href="https://www.pnas.org/content/107/12/5393">DNA as a universal substrate for chemical kinetics</a><br>
+   Proceedings of the National Academy of Sciences Mar 2010, 107 (12) 5393-5398; DOI: 10.1073/pnas.0909380107<br><br>
+
+1. Niranjan Srinivas, James Parkin, Georg Seelig, Erik Winfree and David Soloveichik<br>
+   <a href="https://science.sciencemag.org/content/358/6369/eaal2052.full">Enzyme-free nucleic acid dynamical systems</a><br>
+   Science 358, eaal2052 (2017).<br>
+   Some images were taken from <a href="https://science.sciencemag.org/content/suppl/2017/12/13/358.6369.eaal2052.DC1">supplementary materials</a><br><br>
+
+1. Chalk, Cameron, Niels Kornerup, Wyatt Reeves, and David Soloveichik.<br>
+   <a href="https://arxiv.org/abs/1907.00053">Composable rate-independent computation in continuous chemical reaction networks.</a><br>
+   International Conference on Computational Methods in Systems Biology, pp. 256-273. Springer, Cham, 2018.<br><br>
+
+1. Chen, Ho-Lin, David Doty, and David Soloveichik.<br>
+   <a href="https://dl.acm.org/doi/abs/10.1145/2554797.2554827">Rate-independent computation in continuous chemical reaction networks.</a><br>
+   Proceedings of the 5th conference on Innovations in theoretical computer science. 2014.<br><br>
+
+1. Marko Vasic, David Soloveichik and Sarfraz Khurshid<br>
+   <a href="https://arxiv.org/abs/1809.07430">CRN++: Molecular Programming Language</a><br>
+   Natural Computing (2020) 19:391–407 DOI: 10.1007/s11047-019-09775-1
