@@ -5,11 +5,8 @@
 <h1 align="center">Cube3d.dna</h1>
 
 <p align="center">
-Most advanced and compact 3d engine ever implemented in DNA code
-</p>
-<br>
-
-<p align="center">
+  Most advanced and compact 3d engine ever implemented in DNA code
+  <br><br>
   <img alt="environment: in vitro" src="https://img.shields.io/badge/environment-in%20vitro-red"/>
   <img alt="platform: DNA | TMSD" src="https://img.shields.io/badge/platform-DNA%20%7C%20TMSD-white"/>
   <img alt="bundle size: 17K nucleotides" src="https://img.shields.io/badge/bundle%20size-17K%20nucleotides-blue"/>
