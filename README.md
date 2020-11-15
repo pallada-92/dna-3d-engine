@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://github.com/chakra-ui/chakra-ui">
-    <img src="https://habrastorage.org/webt/ks/y7/jx/ksy7jxrgwr8xq2arprn-eo_lexs.png" alt="CubeCRN logo" width="500" />
-  </a>
+  <img src="https://hsto.org/webt/r6/dp/ks/r6dpksrxkvmgumetfjvfjcwn4wy.png" alt="CubeCRN logo" width="700" />
 </p>
 
 <h1 align="center">Cube3d.dna</h1>
@@ -24,7 +22,7 @@ Most advanced and compact 3d engine ever implemented in DNA code
 ## Getting started
 
 * [Step by step tutorial](https://observablehq.com/d/45f2227392644567)
-* [Try this in your browser](https://observablehq.com/d/5288cbf0a5de42b2)
+* [Try this in your browser](https://observablehq.com/d/5288cbf0a5de42b2#3d-engine)
 
 ## How to deploy
 
