@@ -69,17 +69,6 @@ nz = 0.737 + -0.270 Col + 0.302 Row
 * [JavaScript version](https://observablehq.com/d/940d2895b3e9e611)
 * [Russian (Русский)](https://habr.com/ru/post/437168/)
 
-## Building from source
-
-1. Install the <a href="https://github.com/DNA-and-Natural-Algorithms-Group/piperine">piperine compiler by the DNA and Natural Algorithms Group</a>.
-2. Run the following command
-
-```
-piperine-design cube3d.crn --maxspurious 0.765
-```
-
-3. Wait 2-3 hours for compilation results
-
 ## Gallery
 
 <table>
@@ -145,6 +134,16 @@ piperine-design cube3d.crn --maxspurious 0.765
   </tr>
 </table>
 
+## Building from source
+
+1. Install the <a href="https://github.com/DNA-and-Natural-Algorithms-Group/piperine">piperine compiler by the DNA and Natural Algorithms Group</a>.
+2. Run the following command
+
+```
+piperine-design cube3d.crn --maxspurious 0.765
+```
+
+3. Wait 2-3 hours for compilation results
 
 ## References
 
