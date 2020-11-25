@@ -26,14 +26,26 @@ jobs:
           print(sys.version)
           from pathlib import Path
           print(os.environ['GITHUB_ENV'])
-          Path(os.environ['GITHUB_ENV']).write_text('ANSWER=A42')
+          Path(os.environ['GITHUB_ENV']).write_text('ANSWER1=A42')
+          Path(os.environ['GITHUB_ENV']).write_text('ANSWER2=B42')
+          Path(os.environ['GITHUB_ENV']).write_text('ANSWER3=C42')
 
       - name: Create Awesome Badge
         uses: schneegans/dynamic-badges-action@v1.0.0
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
-          filename: test.json
+          filename: test1.json
           label: Hello
-          message: ${{ env.ANSWER }}
+          message: ${{ env.ANSWER1 }}
+          color: orange
+
+      - name: Create Awesome Badge
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
+          filename: test2.json
+          label: Hello
+          message: ${{ env.ANSWER2 }}
           color: orange
