@@ -21,12 +21,13 @@ jobs:
       - name: Run a multi-line script
         shell: python
         run: |
-          import os
-          import sys
-          print(sys.version)
+          import os; import sys; print(sys.version)
           from pathlib import Path
-          print(os.environ['GITHUB_ENV'])
-          Path(os.environ['GITHUB_ENV']).write_text('ANSWER1=A42\nANSWER2=B42')
+          print(Path('./cube3d.crn').read_text(encoding='utf-8'))
+          Path(os.environ['GITHUB_ENV']).write_text('\n'.join([
+            'ANSWER1=' + 'X42',
+            'ANSWER1=' + 'Y42',
+          ]))
 
       - name: Create Awesome Badge
         uses: schneegans/dynamic-badges-action@v1.0.0
