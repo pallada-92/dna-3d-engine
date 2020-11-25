@@ -31,3 +31,13 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Create Awesome Badge
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
+          filename: test.json
+          label: Hello
+          message: World
+          color: orange
