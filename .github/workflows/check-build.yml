@@ -26,8 +26,9 @@ jobs:
           print(Path('./cube3d.crn').read_text(encoding='utf-8'))
           Path(os.environ['GITHUB_ENV']).write_text('\n'.join([
             'ANSWER1=' + 'X42',
-            'ANSWER1=' + 'Y42',
+            'ANSWER2=' + 'Y42',
           ]))
+          raise Exception('Test exception')
 
       - name: Create Awesome Badge
         uses: schneegans/dynamic-badges-action@v1.0.0
