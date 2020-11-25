@@ -18,6 +18,8 @@ jobs:
         shell: python
         run: |
           import os
+          import sys
+          print(sys.version)
           from pathlib import Path
           print(os.environ['PATH'])
           print(list(Path('.').iterdir()))
