@@ -25,7 +25,9 @@ jobs:
           import sys
           print(sys.version)
           from pathlib import Path
-          os.environ['GITHUB_ENV'] = 'ANSWER=A42'
+          print(os.environ['GITHUB_ENV'])
+          os.environ['GITHUB_ENV'] += 'ANSWER=A42'
+          print(os.environ['GITHUB_ENV'])
 
       - name: Create Awesome Badge
         uses: schneegans/dynamic-badges-action@v1.0.0
