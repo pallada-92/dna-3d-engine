@@ -30,9 +30,10 @@ jobs:
             'LOC_BADGE_TEXT=' + badges['loc_badge'],
             'BUNDLE_SIZE_BADGE_TEXT=' + badges['bundle_size_badge'],
             'COVERAGE_BADGE_TEXT=' + badges['coverage_badge'],
+            'COVERAGE_BADGE_COLOR=' + ('green' if badges['coverage_badge'] == '100%' else 'red'),
             'TESTS_BADGE_TEXT=' + badges['tests_badge'],
+            'TESTS_BADGE_COLOR=' + ('green' if 'fail' not in badges['tests_badge'].lower() else 'red'),
           ]))
-          raise Exception('Test exception')
 
       - name: Create Awesome Badge
         uses: schneegans/dynamic-badges-action@v1.0.0
@@ -62,7 +63,7 @@ jobs:
           filename: coverage_badge.json
           label: Hello
           message: ${{ env.COVERAGE_BADGE_TEXT }}
-          color: orange
+          color: ${{ env.COVERAGE_BADGE_COLOR }}
 
       - name: Create Awesome Badge
         uses: schneegans/dynamic-badges-action@v1.0.0
@@ -72,4 +73,4 @@ jobs:
           filename: tests_badge.json
           label: Hello
           message: ${{ env.TESTS_BADGE_TEXT }}
-          color: orange
+          color: ${{ env.TESTS_BADGE_COLOR }}
