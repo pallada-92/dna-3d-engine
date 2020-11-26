@@ -22,12 +22,15 @@ jobs:
         shell: python
         run: |
           import os; import sys; print(sys.version)
+          from pathlib import Path
           sys.path.append('./.github/workflows')
           from make_badges import make_badges
-          print(make_badges())
+          badges = make_badges()
           Path(os.environ['GITHUB_ENV']).write_text('\n'.join([
-            'ANSWER1=' + 'X42',
-            'ANSWER2=' + 'Y42',
+            'LOC_BADGE_TEXT=' + badges['loc_badge'],
+            'BUNDLE_SIZE_BADGE_TEXT=' + badges['bundle_size_badge'],
+            'COVERAGE_BADGE_TEXT=' + badges['coverage_badge'],
+            'TESTS_BADGE_TEXT=' + badges['tests_badge'],
           ]))
           raise Exception('Test exception')
 
@@ -36,9 +39,9 @@ jobs:
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
-          filename: test1.json
-          label: Hello
-          message: ${{ env.ANSWER1 }}
+          filename: loc_badge.json
+          label: loc
+          message: ${{ env.LOC_BADGE_TEXT }}
           color: orange
 
       - name: Create Awesome Badge
@@ -46,7 +49,27 @@ jobs:
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
-          filename: test2.json
+          filename: bundle_size_badge.json
           label: Hello
-          message: ${{ env.ANSWER2 }}
+          message: ${{ env.BUNDLE_SIZE_BADGE_TEXT }}
+          color: orange
+
+      - name: Create Awesome Badge
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
+          filename: coverage_badge.json
+          label: Hello
+          message: ${{ env.COVERAGE_BADGE_TEXT }}
+          color: orange
+
+      - name: Create Awesome Badge
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
+          filename: tests_badge.json
+          label: Hello
+          message: ${{ env.TESTS_BADGE_TEXT }}
           color: orange
