@@ -22,8 +22,9 @@ jobs:
         shell: python
         run: |
           import os; import sys; print(sys.version)
-          from pathlib import Path
-          print(Path('./cube3d.crn').read_text(encoding='utf-8'))
+          sys.path.append('./.github/workflows')
+          from make_badges import make_badges
+          print(make_badges())
           Path(os.environ['GITHUB_ENV']).write_text('\n'.join([
             'ANSWER1=' + 'X42',
             'ANSWER2=' + 'Y42',
