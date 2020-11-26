@@ -1,4 +1,4 @@
-name: CI
+name: lint
 
 on:
   push:
@@ -74,3 +74,13 @@ jobs:
           label: Hello
           message: ${{ env.TESTS_BADGE_TEXT }}
           color: ${{ env.TESTS_BADGE_COLOR }}
+
+      - name: Run a multi-line script
+        shell: python
+        run: |
+          import sys
+          sys.path.append('./.github/workflows')
+          from make_badges import make_badges
+          tests_res = make_badges()['tests_badge']
+          if 'fail' in tests_res.lower():
+            raise Exception(f'Tests not passed: {tests_res}')
