@@ -40,9 +40,9 @@ jobs:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
           filename: loc_badge.json
-          label: loc
+          label: LOC
           message: ${{ env.LOC_BADGE_TEXT }}
-          color: orange
+          color: black
 
       - name: Create Awesome Badge
         uses: schneegans/dynamic-badges-action@v1.0.0
@@ -50,7 +50,7 @@ jobs:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
           filename: bundle_size_badge.json
-          label: Hello
+          label: bundle size
           message: ${{ env.BUNDLE_SIZE_BADGE_TEXT }}
           color: orange
 
@@ -60,16 +60,16 @@ jobs:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
           filename: coverage_badge.json
-          label: Hello
+          label: coverage
           message: ${{ env.COVERAGE_BADGE_TEXT }}
           color: ${{ env.COVERAGE_BADGE_COLOR }}
 
-      - name: Create Awesome Badge
-        uses: schneegans/dynamic-badges-action@v1.0.0
-        with:
-          auth: ${{ secrets.GIST_SECRET }}
-          gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
-          filename: tests_badge.json
-          label: Hello
-          message: ${{ env.TESTS_BADGE_TEXT }}
-          color: ${{ env.TESTS_BADGE_COLOR }}
+#       - name: Create Awesome Badge
+#         uses: schneegans/dynamic-badges-action@v1.0.0
+#         with:
+#           auth: ${{ secrets.GIST_SECRET }}
+#           gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
+#           filename: tests_badge.json
+#           label: tests
+#           message: ${{ env.TESTS_BADGE_TEXT }}
+#           color: ${{ env.TESTS_BADGE_COLOR }}
