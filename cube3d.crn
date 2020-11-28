@@ -13,7 +13,7 @@ ayp -> axm + mxyp
 mxym + azm -> mxyzm
 mxyp -> azm + mxyzp
 azp -> mxym + mxyzp
-mxyzp + mxyzm -> 0
-Q + mxyzp -> t1 + t2
-t1 -> Q + mxyzp
+mxyzp + mxyzm ->
+q + mxyzp -> t1 + t2
+t1 -> q + mxyzp
 t2 -> inrp + R
