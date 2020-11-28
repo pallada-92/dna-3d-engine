@@ -1,5 +1,5 @@
 from lint_crn import lint_crn, find_crn
-from tests_utils import emulate_crn, assert_approx, unit_test
+from tests_utils import emulate_crn, assert_approx, unit_test, assert_large
 
 
 def make_initial(x, y):
