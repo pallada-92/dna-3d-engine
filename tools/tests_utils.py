@@ -24,6 +24,11 @@ def assert_approx(test_val, ref_val, max_rel_error=0.01):
         raise Exception(f"Value {test_val} is too far from {ref_val}")
 
 
+def assert_large(test_val, threshold=1000):
+    if test_val < threshold:
+        raise Exception(f"Value {test_val} is less, than {threshold}")
+
+
 all_tests = []
 
 
