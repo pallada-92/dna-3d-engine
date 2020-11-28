@@ -23,7 +23,7 @@ jobs:
         run: |
           import sys
           sys.path.append('./.github/workflows')
-          from make_badges import run_tests
+          from tests_utils import run_tests
 
           passed, total = run_tests()
           failed = total - passed
