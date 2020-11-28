@@ -5,7 +5,7 @@
 <h1 align="center">cube3d.dna</h1>
  
 <p align="center">
-  Most advanced and compact 3d engine ever implemented in DNA code
+  The most advanced and compact 3d engine ever implemented in DNA code.
   <br><br>
   <img alt="environment: in vitro" src="https://img.shields.io/badge/environment-in%20vitro-red"/>
   <img alt="platform: DNA | TMSD" src="https://img.shields.io/badge/platform-DNA%20%7C%20TMSD-white"/>
@@ -27,10 +27,10 @@
 
 ## How to deploy
 
-1. Synthesise oligonucleotides from [cube3d.dna](./cube3d.dna) file.
-2. Arrange test tubes as shown on the diagram below.
-3. Don't forget to provide initial concentrations according to the table below.
-4. Use pipette to encode position (row and column) of each tube to start computation.
+1. Synthesize the oligonucleotides from the [cube3d.dna](./cube3d.dna) file.
+2. Arrange the test tubes as shown in the diagram below.
+3. Don't forget to provide the initial concentrations according to the table below.
+4. Use a pipette to encode the position (row and column) of each tube to start the computation.
 
 <details>
 <summary>Environment variables</summary>
@@ -57,8 +57,8 @@ nz = 0.737 + -0.270 Col + 0.302 Row
 
 ## Testing
 
-1. Pick the fluorophore of your favourite color and attach it to the `Strand R0`, so that it activates when `R` species are being produced.
-2. Use the light source of specific wavelength (depending of the fluorophore you've chosen) to render the result.
+1. Pick the <a href="https://en.wikipedia.org/wiki/Fluorophore">fluorophore</a> of your favorite color and attach it to the `Strand R0`, so that it activates when the `R` species are being produced.
+2. Use a light source with a specific wavelength (depending on the fluorophore you've chosen) to render the result.
 
 <p align="center">
 <img src="https://hsto.org/webt/hv/q_/zy/hvq_zyw6uuwwfpg6umqthctq6tm.png" width="600"/>
@@ -90,62 +90,62 @@ nz = 0.737 + -0.270 Col + 0.302 Row
   <tr>
     <td align="center" valign="center">
       <img src="https://habrastorage.org/webt/gw/zb/v1/gwzbv1w5humyabeelkyx_c3gq7k.gif" width="100%" /><br>
-      Simplified animation of toehold mediated strand displacement technique
+      Simplified animation of the toehold mediated strand displacement technique (based on supplementary materials from [2])
     </td>
     <td align="center" valign="center">
       <img src="https://habrastorage.org/webt/ph/iv/ax/phivaxoqftqzm2h7qvbbj41dwiq.png" width="100%" /><br><br>
-      Types of oligonucleotides required for single reaction
+      The types of oligonucleotides required for a single reaction (based on supplementary materials from [2])
     </td>
   </tr>
   <tr></tr>
   <tr>
     <td align="center" valign="center">
       <img src="https://habrastorage.org/webt/ww/9k/xd/ww9kxd64xtigxtbpc5mm3tvsswg.png" width="100%" /><br>
-      Data flow graph of JS implementation
+      Data flow graph of the JS implementation.
     </td>
     <td align="center" valign="center">
       <img src="https://habrastorage.org/webt/uj/_l/2_/uj_l2_q26onfetzrpq_0wfetxic.png" width="100%" /><br>
-      Species interaction graph of this implementation
+      Species interaction graph of this implementation.
     </td>
   </tr>
   <tr></tr>
   <tr>
     <td align="center" valign="center">
       <img src="https://habrastorage.org/webt/-j/ak/5i/-jak5iv5d7pkkosrhl_g4r3oo34.png" width="100%" /><br><br>
-      Unminified source code of this implementation. It is just plain reactions with a few macros.
-      Minifier was written in Wolfram Language specially for this project. 
+      Unminified source code of this implementation which just comprises plain reactions with a few macros.
+      The minifier was written in Wolfram Language specially for this project.
     </td>
     <td align="center" valign="center">
       <br>
       <img src="https://habrastorage.org/webt/qn/-j/bu/qn-jbugqz0opyuxhvm6j09wv5te.png" width="100%" /><br><br>
-      CRN++ source code for comparison (CRN++ is not used in this implementation)
+      CRN++ source code for comparison (CRN++ is not used in this implementation).
     </td>
   </tr>
   <tr></tr>
   <tr>
     <td align="center" valign="center">
       <img src="https://habrastorage.org/webt/lv/ah/vs/lvahvszdgpw5vbvottwja7gwtjw.png" width="100%" /><br><br>
-      10 reactions after minification used in this project.
-      Since piperine compiler doesn't support more than 2 products in the right hand side, reactions were splitted.
+      10 reactions after the minification used in this project.
+      Since the piperine compiler doesn't support more than 2 products on the right-hand side, the reactions were split.
     </td>
     <td align="center" valign="center">
       <br>
       <img src="https://habrastorage.org/webt/lh/hx/j8/lhhxj842nxuxdocbz1zsyazvfok.png" width="100%" /><br><br>
-      CRN++ 70 reactions output for comparison (CRN++ is not used in this implementation)
+      CRN++ 70 reactions output for comparison (CRN++ is not used in this implementation).
     </td>
   </tr>
 </table>
 
 ## Building from source
 
-1. Install the <a href="https://github.com/DNA-and-Natural-Algorithms-Group/piperine">piperine compiler by the DNA and Natural Algorithms Group</a>.
+1. Install the <a href="https://github.com/DNA-and-Natural-Algorithms-Group/piperine">piperine compiler</a> by the DNA and Natural Algorithms Group.
 2. Run the following command
 
 ```
 piperine-design cube3d.crn --maxspurious 0.765
 ```
 
-3. Wait 2-3 hours for compilation results
+3. Wait 2-3 hours for the compilation results.
 
 ## References
 
