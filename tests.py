@@ -22,7 +22,7 @@ reactions = lint_crn(find_crn())['reactions']
 
 
 @unit_test
-def test_1():
+def test_center():
     # -*- text -*-
     initial = make_initial(0.5, 0.5)
     emulate_res = emulate_crn(initial, reactions, 0.1, 100000)
@@ -30,8 +30,21 @@ def test_1():
 
 
 @unit_test
-def test_2():
-    # -*- text -*-
+def test_corner():
     initial = make_initial(0.0, 0.0)
     emulate_res = emulate_crn(initial, reactions, 0.1, 100000)
     assert_large(emulate_res['R'])
+
+
+@unit_test
+def test_edge_out():
+    initial = make_initial(0.086, 0.5)
+    emulate_res = emulate_crn(initial, reactions, 0.1, 100000)
+    assert_large(emulate_res['R'])
+
+
+@unit_test
+def test_edge_in():
+    initial = make_initial(0.087, 0.5)
+    emulate_res = emulate_crn(initial, reactions, 0.1, 100000)
+    assert_approx(emulate_res['R'], 2.63, 0.05)
