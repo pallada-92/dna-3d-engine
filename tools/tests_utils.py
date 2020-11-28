@@ -45,7 +45,7 @@ def run_tests():
         try:
             test()
         except Exception as e:
-            print(f'TEST {no}: FAIL: {e}')
+            print(f'TEST {no}: FAIL: {str(e)}')
         else:
             print(f'TEST {no}: OK')
             passed_tests += 1
