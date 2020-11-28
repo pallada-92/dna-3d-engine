@@ -36,8 +36,8 @@ def lint_crn(fpath):
             raise Exception(msg_prefix + 'non-empty line should contain exactly one "->"')
         loc += 1
         lhs, rhs = eq_parts
-        lhs = [s.strip() for s in lhs.split('+')]
-        rhs = [s.strip() for s in rhs.split('+')]
+        lhs = [s.strip() for s in lhs.split('+') if s.strip()]
+        rhs = [s.strip() for s in rhs.split('+') if s.strip()]
         if len(lhs) > 2:
             raise Exception(msg_prefix + 'left part of equation should contain at most 2 species')
         if len(rhs) > 2:
