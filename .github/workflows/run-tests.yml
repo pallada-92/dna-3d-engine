@@ -21,9 +21,11 @@ jobs:
         shell: python
         run: |
           import sys
+
           sys.path.append('./tools')
           from tests_utils import run_tests
           
+          sys.path.append('.')
           import tests
 
           passed, total = run_tests()
