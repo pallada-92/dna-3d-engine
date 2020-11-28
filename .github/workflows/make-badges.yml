@@ -42,7 +42,7 @@ jobs:
           filename: loc_badge.json
           label: LOC
           message: ${{ env.LOC_BADGE_TEXT }}
-          color: black
+          color: teal
 
       - name: Create Awesome Badge
         uses: schneegans/dynamic-badges-action@v1.0.0
@@ -52,7 +52,7 @@ jobs:
           filename: bundle_size_badge.json
           label: bundle size
           message: ${{ env.BUNDLE_SIZE_BADGE_TEXT }}
-          color: orange
+          color: blue
 
       - name: Create Awesome Badge
         uses: schneegans/dynamic-badges-action@v1.0.0
