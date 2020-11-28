@@ -16,8 +16,7 @@
   <img alt="total lines" src="https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/pallada-92/7b35716db8bedb6914c6cf2fab3a4dd0/raw/9f12594aead95be9c0e34ac4492d0b95a8d25c25/loc_badge.json"/>
   <img alt="coverage" src="https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/pallada-92/7b35716db8bedb6914c6cf2fab3a4dd0/raw/9f12594aead95be9c0e34ac4492d0b95a8d25c25/coverage_badge.json"/>
   <img alt="bundle size" src="https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/pallada-92/7b35716db8bedb6914c6cf2fab3a4dd0/raw/9f12594aead95be9c0e34ac4492d0b95a8d25c25/bundle_size_badge.json"/>  
-  <!-- <img alt="build: passing" src="https://img.shields.io/badge/build-passing-green"/> -->
-  <img alt="active installs: 0" src="https://img.shields.io/badge/active%20installs-0-yellow"/>
+  <!-- <img alt="active installs: 0" src="https://img.shields.io/badge/active%20installs-0-yellow"/> -->
 </p>
 <br />
 
