@@ -5,9 +5,12 @@ from tests_utils import emulate_crn, assert_approx, unit_test
 def make_initial(x, y):
     return {
         'q': 0.01,
-        'cxm': 0.606,
-        'cym': 0.898,
-        'czm': 1.243,
+        'cxtm': 0.606,
+        'cytm': 0.898,
+        'cztm': 1.243,
+        'axp': 0.606,
+        'ayp': 0.898,
+        'azp': 1.243,
         'mxyzm': 0.3,
         'nx': 0.036 + 0.555 * x + 0.147 * y,
         'ny': 0.853 - 0.517 * y,
