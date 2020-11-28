@@ -22,7 +22,7 @@ def test_1():
     # -*- text -*-
     initial = make_initial(0.5, 0.5)
     emulate_res = emulate_crn(initial, reactions, 0.01, 10000)
-    assert_approx(emulate_res['X'], 0.0244, 0.01)
+    assert_approx(emulate_res['R'], 0.0244, 0.01)
 
 
 @unit_test
@@ -30,4 +30,4 @@ def test_2():
     # -*- text -*-
     initial = make_initial(0.0, 0.0)
     emulate_res = emulate_crn(initial, reactions, 0.01, 10000)
-    assert_approx(emulate_res['X'], 0.244, 0.01)
+    assert_approx(emulate_res['R'], 0.244, 0.01)
