@@ -4,17 +4,19 @@ def emulate_crn(initial, reactions, dt, steps):
         for species, value in initial.items()
     }
 
+    next_conc = dict(conc)
     for i in range(steps):
-        next_conc = dict(conc)
         for lhs, rhs in reactions:
             rate = dt
             for species in lhs:
                 rate *= conc.get(species, 0)
             for species in lhs:
-                next_conc[species] = max(0, next_conc.get(species, 0) - rate)
+                next_conc[species] = next_conc.get(species, 0) - rate
             for species in rhs:
-                next_conc[species] = max(0, next_conc.get(species, 0) + rate)
-        conc = next_conc
+                next_conc[species] = next_conc.get(species, 0) + rate
+        for species in next_conc:
+            next_conc[species] = max(0, next_conc[species])
+            conc[species] = next_conc[species]
 
     return conc
 
