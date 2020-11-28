@@ -4,6 +4,7 @@ from tests_utils import emulate_crn, assert_approx, unit_test
 
 def make_initial(x, y):
     return {
+        'q': 0.01,
         'cxm': 0.606,
         'cym': 0.898,
         'czm': 1.243,
