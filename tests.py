@@ -23,6 +23,4 @@ def test_1():
     reactions = list(reactions)
     emulate_res = emulate_crn(initial, reactions, 0.01, 10000)
     assert_approx(emulate_res['X'], 1.21, 0.01)
-
-
-# -*- text -*-
+    # -*- text -*-
