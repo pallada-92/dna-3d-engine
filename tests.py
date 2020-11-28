@@ -45,6 +45,6 @@ def test_edge_out():
 
 @unit_test
 def test_edge_in():
-    initial = make_initial(0.090, 0.5)
+    initial = make_initial(0.095, 0.5)
     emulate_res = emulate_crn(initial, reactions, 0.1, 100000)
-    assert_approx(emulate_res['R'], 2.63, 0.05)
+    assert_approx(emulate_res['R'], 2.62, 0.05)
