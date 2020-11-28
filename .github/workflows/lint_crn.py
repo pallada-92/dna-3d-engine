@@ -3,6 +3,20 @@ from pathlib import Path
 from collections import Counter
 
 
+def find_crn():
+    crn_fpath = None
+    crn_files_count = 0
+    for fpath in Path('.').iterdir():
+        if fpath.suffix == '.crn':
+            crn_fpath = fpath
+            crn_files_count += 1
+
+    if crn_files_count != 1:
+        raise Exception('There should be exactly one .crn file in repository')
+
+    return crn_fpath
+
+
 def lint_crn(fpath):
     if type(fpath) is str:
         text = fpath
