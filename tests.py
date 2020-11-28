@@ -37,6 +37,7 @@ def test_corner():
 
 @unit_test
 def test_edge_out():
+    # -*- text -*-
     initial = make_initial(0.12, 0.5)
     emulate_res = emulate_crn(initial, reactions, 0.1, 100000)
     assert_large(emulate_res['R'])
@@ -49,4 +50,3 @@ def test_edge_in():
     assert_approx(emulate_res['R'], 2.84, 0.05)
 
 
-# -*- text -*-
