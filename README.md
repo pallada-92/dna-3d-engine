@@ -11,7 +11,11 @@
   <img alt="platform: DNA | TMSD" src="https://img.shields.io/badge/platform-DNA%20%7C%20TMSD-white"/>
   <img alt="bundle size: 17K nucleotides" src="https://img.shields.io/badge/bundle%20size-17K%20nucleotides-blue"/>
   <br>
-  <img alt="total lines: 19" src="https://img.shields.io/badge/total%20lines-19%20reactions-black.svg"/>
+  <img alt="lint status" src="https://github.com/pallada-92/dna-3d-engine/workflows/lint/badge.svg"/>
+  <img alt="tests status" src="https://github.com/pallada-92/dna-3d-engine/workflows/tests/badge.svg"/>
+  <img alt="total lines" src="https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/pallada-92/7b35716db8bedb6914c6cf2fab3a4dd0/raw/9f12594aead95be9c0e34ac4492d0b95a8d25c25/loc_badge.json"/>
+  <img alt="coverage" src="https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/pallada-92/7b35716db8bedb6914c6cf2fab3a4dd0/raw/9f12594aead95be9c0e34ac4492d0b95a8d25c25/coverage_badge.json"/>
+  <img alt="bundle size" src="https://gist.githubusercontent.com/pallada-92/7b35716db8bedb6914c6cf2fab3a4dd0/raw/9f12594aead95be9c0e34ac4492d0b95a8d25c25/bundle_size_badge.json"/>  
   <img alt="license: GPL-v.3.0+" src="https://img.shields.io/badge/license-GPL--v.3.0%2B-green.svg"/>
   <!-- <img alt="build: passing" src="https://img.shields.io/badge/build-passing-green"/> -->
   <img alt="active installs: 0" src="https://img.shields.io/badge/active%20installs-0-yellow"/>
