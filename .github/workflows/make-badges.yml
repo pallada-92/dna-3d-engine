@@ -1,0 +1,76 @@
+name: lint
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2.1.4
+        with:
+          python-version: '3.7'
+
+      - name: Run a multi-line script
+        shell: python
+        run: |
+          import os; import sys; print(sys.version)
+          from pathlib import Path
+          sys.path.append('./.github/workflows')
+          from make_badges import make_badges
+          badges = make_badges()
+          Path(os.environ['GITHUB_ENV']).write_text('\n'.join([
+            'LOC_BADGE_TEXT=' + badges['loc_badge'],
+            'BUNDLE_SIZE_BADGE_TEXT=' + badges['bundle_size_badge'],
+            'COVERAGE_BADGE_TEXT=' + badges['coverage_badge'],
+            'COVERAGE_BADGE_COLOR=' + ('green' if badges['coverage_badge'] == '100%' else 'red'),
+            'TESTS_BADGE_TEXT=' + badges['tests_badge'],
+            'TESTS_BADGE_COLOR=' + ('green' if 'fail' not in badges['tests_badge'].lower() else 'red'),
+          ]))
+
+      - name: Create Awesome Badge
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
+          filename: loc_badge.json
+          label: loc
+          message: ${{ env.LOC_BADGE_TEXT }}
+          color: orange
+
+      - name: Create Awesome Badge
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
+          filename: bundle_size_badge.json
+          label: Hello
+          message: ${{ env.BUNDLE_SIZE_BADGE_TEXT }}
+          color: orange
+
+      - name: Create Awesome Badge
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
+          filename: coverage_badge.json
+          label: Hello
+          message: ${{ env.COVERAGE_BADGE_TEXT }}
+          color: ${{ env.COVERAGE_BADGE_COLOR }}
+
+      - name: Create Awesome Badge
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 7b35716db8bedb6914c6cf2fab3a4dd0
+          filename: tests_badge.json
+          label: Hello
+          message: ${{ env.TESTS_BADGE_TEXT }}
+          color: ${{ env.TESTS_BADGE_COLOR }}
