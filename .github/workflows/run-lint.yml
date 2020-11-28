@@ -22,7 +22,7 @@ jobs:
         run: |
           import os; import sys; print(sys.version)
           from pathlib import Path
-          sys.path.append('./.github/workflows')
+          sys.path.append('./tools')
           from lint_crn import lint_crn, find_crn
           from lint_dna import lint_dna, find_dna
           

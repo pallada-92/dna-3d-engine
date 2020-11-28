@@ -21,7 +21,7 @@ jobs:
         shell: python
         run: |
           import sys
-          sys.path.append('./.github/workflows')
+          sys.path.append('./tools')
           from tests_utils import run_tests
 
           passed, total = run_tests()

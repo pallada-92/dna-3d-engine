@@ -22,7 +22,7 @@ jobs:
         run: |
           import os; import sys; print(sys.version)
           from pathlib import Path
-          sys.path.append('./.github/workflows')
+          sys.path.append('./tools')
           from make_badges import make_badges
           badges = make_badges()
           Path(os.environ['GITHUB_ENV']).write_text('\n'.join([

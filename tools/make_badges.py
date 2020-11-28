@@ -6,7 +6,7 @@ from lint_dna import find_dna, lint_dna
 from code_coverage import code_coverage
 from tests_utils import run_tests
 
-sys.path.append(str(Path(__file__).parent / '../..'))
+sys.path.append(str(Path(__file__).parent / '..'))
 import tests
 
 
