@@ -2,7 +2,7 @@
   <img src="https://hsto.org/webt/r6/dp/ks/r6dpksrxkvmgumetfjvfjcwn4wy.png" alt="CubeCRN logo" width="400" />
 </p>
 
-<h1 align="center">Cube3d.dna</h1>
+<h1 align="center">cube3d.dna</h1>
  
 <p align="center">
   Most advanced and compact 3d engine ever implemented in DNA code
@@ -36,7 +36,7 @@
 <summary>Environment variables</summary>
 
 ```
-Q = 0.01
+q = 0.01
 cxtm = 0.606
 axp = 0.606
 cytm = 0.898
