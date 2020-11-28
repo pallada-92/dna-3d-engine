@@ -29,7 +29,7 @@ jobs:
             'LOC_BADGE_TEXT=' + badges['loc_badge'],
             'BUNDLE_SIZE_BADGE_TEXT=' + badges['bundle_size_badge'],
             'COVERAGE_BADGE_TEXT=' + badges['coverage_badge'],
-            'COVERAGE_BADGE_COLOR=' + ('green' if badges['coverage_badge'] == '100%' else 'red'),
+            'COVERAGE_BADGE_COLOR=' + ('green' if int(badges['coverage_badge'].replace('%', '')) > 95 else 'red'),
             'TESTS_BADGE_TEXT=' + badges['tests_badge'],
             'TESTS_BADGE_COLOR=' + ('green' if 'fail' not in badges['tests_badge'].lower() else 'red'),
           ]))
