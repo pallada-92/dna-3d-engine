@@ -23,6 +23,8 @@ jobs:
           import sys
           sys.path.append('./tools')
           from tests_utils import run_tests
+          
+          import tests
 
           passed, total = run_tests()
           failed = total - passed
