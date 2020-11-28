@@ -1,5 +1,3 @@
-# -*- text -*-
-
 from lint_crn import lint_crn
 from tests_utils import emulate_crn, assert_approx, unit_test
 
