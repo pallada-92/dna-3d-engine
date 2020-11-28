@@ -3,6 +3,20 @@ from pathlib import Path
 from collections import Counter
 
 
+def find_dna():
+    dna_fpath = None
+    dna_files_count = 0
+    for fpath in Path('.').iterdir():
+        if fpath.suffix == '.dna':
+            dna_fpath = fpath
+            dna_files_count += 1
+
+    if dna_files_count != 1:
+        raise Exception('There should be exactly one .dna file in repository')
+
+    return dna_fpath
+
+
 def lint_dna(fpath):
     if type(fpath) is str:
         text = fpath
