@@ -50,7 +50,6 @@ nz = 0.737 + -0.270 Col + 0.302 Row
 ```
 </details>
 
-
 <p align="center">
 <img src="https://habrastorage.org/webt/v8/hf/gw/v8hfgw7rpxrhw8owhwxewnalfle.png" width="600"/>
 </p>
@@ -63,6 +62,8 @@ nz = 0.737 + -0.270 Col + 0.302 Row
 <p align="center">
 <img src="https://hsto.org/webt/hv/q_/zy/hvq_zyw6uuwwfpg6umqthctq6tm.png" width="600"/>
 </p>
+
+<i>Disclaimer: perhaps it would not be a good idea to try this experiment in a real lab, because it will cost you a lot of money and most likely won’t work as intended the first time.</i>
 
 ## Ports to other languages
 
