@@ -22,7 +22,7 @@
  
 ## Getting started
 
-* [Step by step tutorial on ObservableHQ](https://observablehq.com/d/45f2227392644567)
+* [Getting started tutorial on ObservableHQ](https://observablehq.com/d/45f2227392644567)
 * [Try this in your browser on ObservableHQ](https://observablehq.com/d/5288cbf0a5de42b2#3d-engine)
 
 ## How to deploy
