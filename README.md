@@ -118,7 +118,7 @@ nz = 0.737 + -0.270 Col + 0.302 Row
     <td align="center" valign="center">
       <br>
       <img src="https://habrastorage.org/webt/qn/-j/bu/qn-jbugqz0opyuxhvm6j09wv5te.png" width="100%" /><br><br>
-      CRN++ source code for comparison (CRN++ is not used in this implementation).
+      CRN++ source code for comparison (<a href="https://github.com/marko-vasic/crnPlusPlus">CRN++</a> is not used in this implementation).
     </td>
   </tr>
   <tr></tr>
@@ -131,7 +131,7 @@ nz = 0.737 + -0.270 Col + 0.302 Row
     <td align="center" valign="center">
       <br>
       <img src="https://habrastorage.org/webt/lh/hx/j8/lhhxj842nxuxdocbz1zsyazvfok.png" width="100%" /><br><br>
-      CRN++ 70 reactions output for comparison (CRN++ is not used in this implementation).
+      CRN++ 70 reactions output for comparison (<a href="https://github.com/marko-vasic/crnPlusPlus">CRN++</a> is not used in this implementation).
     </td>
   </tr>
 </table>
@@ -168,7 +168,8 @@ piperine-design cube3d.crn --maxspurious 0.765
 
 1. Marko Vasic, David Soloveichik and Sarfraz Khurshid<br>
    <a href="https://arxiv.org/abs/1809.07430">CRN++: Molecular Programming Language</a><br>
-   Natural Computing (2020) 19:391–407 DOI: 10.1007/s11047-019-09775-1<br><br>
+   Natural Computing (2020) 19:391–407 DOI: 10.1007/s11047-019-09775-1<br>
+   <a href="https://github.com/marko-vasic/crnPlusPlus">CRN++ on GitHub</a><br><br>
 
 1. Inigo Quilez<br>
    https://www.iquilezles.org/www/index.htm<br>
